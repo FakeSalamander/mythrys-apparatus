@@ -1,6 +1,6 @@
-# DiscordJS-Bot-Base
+# His Majesty's Deck
 
-This is a Discord Bot Template. You can add your own commands to it by creating a ``command.js`` in the ``commands`` folder. The name of that file is also the command name!
+This is a WIP Tarot-Deck Discord bot, specifically tailored towards playing His Majesty The Worm in discord channels. It automatically separates the deck into a GM's Deck with the Major Arcana (minus The Fool) and a Players' Deck with the Minor Arcana (plus The Fool), as per the requirements of the game's rules.
 
 ## Installation
 
@@ -13,11 +13,15 @@ Then you have to rename ``config.json.example`` to ``config.json`` and to fill a
 
 Your can get the Token from the Discord Developer Page. [Link](https://discord.com/developers/applications)
 
-## Included
-- Command Manager
-- Event Manager
-- Ping Command
-- Needed Events
+## Roadmap
+
+- create card and deck objects.
+- store deck information on a per-channel basis.
+- /shuffle - shuffles both the GM and Player decks, and initializes them if ran for the first time.
+- /draw-player - draws a card from the Player deck and displays it to everyone
+- /draw-gm - draws a card from the GM's deck and displays it to everyone
+- /discards - display the top card of both of the discard piles
+  
 
 ## Links you might need
 - [DiscordJS.guide](https://discordjs.guide/)
